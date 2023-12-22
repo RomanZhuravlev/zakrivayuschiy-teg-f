@@ -4,3 +4,55 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --text-color: #000;
+  --repeat-grad: #d3d3d3;
+  --linear-grad-first: #e7e7e7;
+  --linear-grad-second: #1a1a1a;
+  --bg-items: #fff;
+  --fill-icon-save: #fff;
+  --button-text-color: #fff;
+  --fill-contour: #000;
+  --fill-sparks: red;
+  --bg-color-dialog: rgb(0 0 0 / 0.75);
+  --fill-path-hover: #000;
+  --fill-path-active: red;
+}
+
+:root.theme-dark {
+  --font-weight-normal: 465;
+  --font-weight-bold: 785;
+  --text-color: #00cc14;
+  --repeat-grad: #000;
+  --linear-grad-first: #007f0c;
+  --linear-grad-second: #004306;
+  --bg-items: #000;
+  --fill-icon-save: #00cc14;
+  --button-text-color: #00cc14;
+  --fill-contour: #00cc14;
+  --fill-sparks: red;
+  --bg-color-dialog: rgb(0 0 0 / 0.75);
+  --fill-path-hover: #00cc14;
+  --fill-path-active: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-normal: 465;
+    --font-weight-bold: 785;
+    --text-color: #00cc14;
+    --repeat-grad: #000;
+    --linear-grad-first: #007f0c;
+    --linear-grad-second: #004306;
+    --bg-items: #000;
+    --fill-icon-save: #00cc14;
+    --button-text-color: #00cc14;
+    --fill-contour: #00cc14;
+    --fill-sparks: red;
+    --bg-color-dialog: rgb(0 0 0 / 0.75);
+    --fill-path-hover: #00cc14;
+    --fill-path-active: red;
+  }
+}

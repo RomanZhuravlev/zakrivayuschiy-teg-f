@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-accent: "Press Start 2P";
+  --font-global: "Inter-Variable";
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --text-color: #000;
+  --repeat-grad: #d3d3d3;
+  --linear-grad-first: #e7e7e7;
+  --linear-grad-second: #1a1a1a;
+  --bg-items: #fff;
+  --fill-icon-save: #fff;
+  --button-text-color: #fff;
+  --fill-contour: #000;
+  --fill-sparks: red;
+  --bg-color-dialog: rgb(0 0 0 / 0.75);
+  --fill-path-hover: #000000;
+  --fill-path-active: red;
+}
