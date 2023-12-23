@@ -186,13 +186,14 @@
 
 .card__item-content {
   gap: 25px;
-  padding-inline: 25px;
+  padding-inline: 23px;
   padding-block: 25px;
 }
 
 .card__item-paragraph {
   gap: 27px;
   line-height: 116.667%;
+  font-size: 18px;
 }
 
 .card__item-buttons {
@@ -387,11 +388,7 @@
 }
 
 /* Адаптив для мобильных устройств */
-@media (width <= 375px) {
-  .page {
-    padding-block: 50px;
-  }
-
+@media (width <= 500px) {
   .header {
     margin-block-end: 97px;
   }
