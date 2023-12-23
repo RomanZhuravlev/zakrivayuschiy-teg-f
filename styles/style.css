@@ -44,7 +44,7 @@
 }
 
 .header__logo {
-  display: inline-block;
+  display: block;
   margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
@@ -69,7 +69,7 @@
 
 .header {
   margin-block-end: 100px;
-  margin-block-start: 50px;
+  margin-block-start: 102px;
   padding-block-start: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem);
   padding-block-end: 25px;
   font-family: var(--font-accent, sans-serif);
@@ -92,13 +92,13 @@
 
 .theme-menu__list {
   margin-inline: clamp(9.625rem, 15.117vw + 6.082rem, 19.688rem) auto;
-  gap: 7px;
+  gap: 12px;
   text-align: left;
   max-inline-size: max-content;
 }
 
 .theme-menu__button {
-  display: inline-block;
+  display: block;
   border: 1px solid transparent;
   background-color: transparent;
   padding: 0;
@@ -132,7 +132,7 @@
 .card__item-title {
   padding-inline: 10px;
   padding-block: 5px;
-  font-size: inherit;
+  font-size: 18px;
   font-weight: var(--font-weight-bold, 700);
   font-variation-settings: "wght" var(--font-weight-bold, 700);
 }
@@ -199,7 +199,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 6px;
+  gap: 2px;
 }
 
 .button {
@@ -313,71 +313,6 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid currentColor;
-}
-
-/* Анимирование иконки сердца */
-.heart {
-  cursor: pointer;
-}
-
-.core {
-  transition: fill 0.3s linear 0.03s;
-}
-
-.main-body {
-  transition: fill 0.3s linear;
-}
-
-.contour {
-  transition: fill 0.1s linear;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.heart:hover .core {
-  fill: var(--fill-path-hover, #000);
-  transition: fill 0.3s linear;
-}
-
-.heart:hover .main-body {
-  fill: var(--fill-path-hover, #000);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.heart:active .core {
-  fill: var(--fill-path-active, red);
-  transition: fill 0.3s linear;
-}
-
-.heart:active .main-body {
-  fill: var(--fill-path-active, red);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--fill-path-active, red);
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--fill-path-active, red);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--fill-path-active, red);
-  transition: fill 0.3s linear 0.06s;
-}
-
-.like-icon.is-liked .sparks {
-  animation: like 0.3s ease-in 0.3s alternate;
-}
-
-.like-icon.is-liked .heart {
-  animation: grow-like 0.3s ease-in 0.1s alternate;
-  transform-origin: center;
 }
 
 /* Модальное окно */
